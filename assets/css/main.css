@@ -1,0 +1,103 @@
+:root{
+        --background-secondary: #2f3136;
+        --background-primary: #36393f;
+        --channels-default: #8e9297;
+        --text-normal:#dcddde;
+        --background-modifier-selected: rgba(79,84,92,0.32);
+        --background-secondary-alt: #292b2f;
+}
+::-webkit-scrollbar{
+        display: none;
+}
+h1{
+        color:var(--text-normal);
+}
+a{
+        text-decoration: none  !important;
+        color: var(--text-normal);
+}
+a:hover{
+        text-decoration: none;
+        color: var(--text-normal);
+}
+html, body{
+        padding: 0;
+        height: 100%;
+}
+.main-container{
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+}
+.left-nav{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        background-color: var(--background-secondary);
+}
+.channels{
+        padding-top: 20px;
+        flex: 10;
+        text-align: center;
+        overflow-x:scroll;
+}
+.channels > div{
+        padding: 5px;
+}
+.channels > div > h1 {
+        padding: 5px;
+        border-radius: 5px;
+        color: var(--channels-default);
+        cursor: pointer;
+        margin: 0;
+        font-size: 28px;
+}
+.channels > div > h1:hover{
+        color: var(--text-normal);
+}
+.channels > div > h1.channel-selected{
+        color: var(--text-normal);
+        background-color: var(--background-modifier-selected);
+}
+.author{
+        flex:1;
+        color: var(--text-normal);
+        background-color: var(--background-secondary-alt);
+}
+.author-split{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 4px;
+}
+.author-image{
+        flex: 1;
+        max-width: 60px;
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+}
+.real-image{
+        max-width: 60px;
+        width: 100%;
+        border-radius: 50%;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-right: 20px; 
+}
+.author-text{
+        flex:1;
+}
+.author-text > a > h1 {
+        font-size:24px ;
+        color: var(--text-normal);
+}
+.center-nav{
+        flex:4;
+        background-color: var(--background-primary);
+}
+.right-nav{
+        flex:1;
+        background-color: var(--background-secondary);
+}
