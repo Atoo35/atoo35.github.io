@@ -9,6 +9,10 @@
 ::-webkit-scrollbar{
         display: none;
 }
+.bi.bi-hash{
+        float: left;
+        margin-right: 10px;
+}
 h1{
         color:var(--text-normal);
 }
@@ -26,8 +30,42 @@ html, body{
 }
 .main-container{
         display: flex;
+        flex-direction: column;
+        height: 100%;
+}
+.content-container{
+        display: flex;
         flex-direction: row;
         height: 100%;
+}
+.top-navbar{
+        display: flex;
+        flex-direction: row;
+        height: 45px;
+        border-bottom: 1px solid var(--background-secondary-alt);
+}
+.topnav-section1{
+        flex: 1;
+        background-color: var(--background-secondary);
+}
+.topnav-section2{
+        flex: 5;
+        background-color: var(--background-primary);
+}
+.topnav-section2 > div >h1 {
+        margin: 9px;
+        color: var(--channels-default);
+        font-size: 25px;
+        text-align: left;
+        
+}
+.topnav-section1 > div > h1{
+        min-width: 154px;
+        /* margin: 0; */
+        margin-top: 10px;
+        color: var(--text-normal);
+        font-size: 20px;
+        text-align: center;
 }
 .left-nav{
         display: flex;
@@ -38,7 +76,7 @@ html, body{
 .channels{
         padding-top: 20px;
         flex: 10;
-        text-align: center;
+        text-align: left;
         overflow-x:scroll;
 }
 .channels > div{
