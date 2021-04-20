@@ -12,3 +12,4 @@ function changeRoute(routeName){
         $(`#${routeName}`).addClass("channel-selected")
         $(`#nav-header-name`).text(routeName)
 }
+

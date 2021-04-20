@@ -20,7 +20,7 @@
                 <div class="top-navbar">
                         <div class="topnav-section1">
                                 <div>
-                                        <h1>Atharva's Server</h1>
+                                        <h1 >Atharva's Server</h1>
                                 </div>
                         </div>
                         <div class="topnav-section2">
@@ -78,25 +78,26 @@
                                         style="border:none;width: 100%;margin:2px;"></iframe>
                         </div>
                         <div class="right-nav">
-                                <!-- <div class="bot-split">
-                                        <div class="bot-image">
-                                                <a href="">
-                                                        <img class="bot-real-image" src="https://cdn.discordapp.com/app-icons/708353162347675749/f21be7f5c953c11eaef915d381823d19.png?size=512"">
-                                                </a>
-                                        </div>
-                                        <div class="bot-text">
-                                                <h1>hello</h1>
-                                        </div>
-                                </div> -->
                                 <div class="bot-split">
                                         <div class="bot-image">
-                                                <a href="">
+                                                <a href="https://top.gg/bot/708353162347675749" target="_blank">
                                                         <img class="bot-real-image" src="https://cdn.discordapp.com/app-icons/708353162347675749/f21be7f5c953c11eaef915d381823d19.png?size=512">
                                                 </a>
                                         </div>
                                         <div class="bot-data">
-                                                <div class="bot-name"><label style="color: orange;">Uncle Jim</label> <span class="label label-primary">BOT</span></div>
+                                                <div class="bot-name"><label style="color: orange;">Uncle Jim</label> <span class="label label-primary"><span><i class="bi bi-check"></i></span><span>BOT</span></span></div>
                                                 <div class="bot-status"><label >Watching <b>over chats</b></label></div>
+                                        </div>
+                                </div>
+                                <div class="bot-split">
+                                        <div class="bot-image">
+                                                <a href="https://top.gg/bot/713181335623041076" target="_blank">
+                                                        <img class="bot-real-image" src="https://cdn.discordapp.com/app-icons/713181335623041076/3f8c5d27d9f8b07fcfa6a2edf7436920.png?size=512"">
+                                                </a>
+                                        </div>
+                                        <div class="bot-data">
+                                                <div class="bot-name"><label style="color: #d305fa;">Bibi</label> <span class="label label-primary"><span><i class="bi bi-check"></i></span><span>BOT</span></span></div>
+                                                <div class="bot-status"><label >Playing <b>bb help</b></label></div>
                                         </div>
                                 </div>
                         </div>
@@ -108,7 +109,13 @@
                         $(function () {
                                 $('[data-toggle="tooltip"]').tooltip()
                         })
-
+                        $('#list').click(function(){
+                        var atrib = $('#list').css("display")
+                        if(atrib === "inline-block")
+                                $('#list').css("display","none")
+                        else
+                                $('#list').css("display","inline-block")
+                })
                 </script>
 </body>
 
