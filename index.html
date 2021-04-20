@@ -25,7 +25,9 @@
                         </div>
                         <div class="topnav-section2">
                                 <div>
-                                        <h1><i class="bi bi-hash"></i><div id="nav-header-name">About-me</div></h1>
+                                        <h1><i class="bi bi-hash"></i>
+                                                <div id="nav-header-name">welcome</div>
+                                        </h1>
                                 </div>
                         </div>
                 </div>
@@ -33,9 +35,13 @@
                         <div class="left-nav">
                                 <div class="channels">
                                         <div>
-                                                <h1 id="About-me" class="channel-selected" onclick="changeRoute('About-me')">
-                                                        <i class="bi bi-hash"></i>About-me
+                                                <h1 id="welcome" class="channel-selected"
+                                                        onclick="changeRoute('welcome')">
+                                                        <i class="bi bi-hash"></i>welcome
                                                 </h1>
+                                        </div>
+                                        <div>
+                                                <p>REPOSITORIES</p>
                                         </div>
                                         <div>
                                                 <h1 id="Page-1" onclick="changeRoute('Page-1')">
@@ -53,27 +59,57 @@
                                                 <div class="author-image">
                                                         <a href="https://www.linkedin.com/in/atharva-deshpande-187969140/"
                                                                 target="_blank">
-                                                                <img class="real-image"
+                                                                <img class="real-image" data-toggle="tooltip" data-placement="top" title="Go to LinkedIn"
                                                                         src="https://avatars.githubusercontent.com/u/43279227?s=400&u=1673f782587866aefc1c751deb798042e21867ab&v=4" />
                                                         </a>
                                                 </div>
-                                                <div class="author-text"><a href="https://github.com/Atoo35"
-                                                                target="_blank">
-                                                                <h1>Atoo35</h1>
-                                                        </a></div>
+                                                <div class="author-text">
+                                                        <a href="https://github.com/Atoo35" target="_blank" >
+                                                                <h1 data-toggle="tooltip" data-placement="top" title="Go to Github">Atoo35</h1>
+                                                        </a>
+                                                        <i class="bi bi-phone" style="margin-right: 5px;" data-toggle="tooltip" data-placement="top" title="+91-9737527193"></i>
+                                                        <a href="mailto:adrooney322@gmail.com"><i class="bi bi-envelope" data-toggle="tooltip" data-placement="top" title="Send Email"></i></a>
+                                                </div>
                                         </div>
                                 </div>
                         </div>
                         <div class="center-nav">
-                                <iframe id="mainFrame" src="./About-me.html" style="border:none;width: 100%;margin:2px;"></iframe>
+                                <iframe id="mainFrame" src="./welcome.html"
+                                        style="border:none;width: 100%;margin:2px;"></iframe>
                         </div>
                         <div class="right-nav">
-                                <!-- <h1>test</h1> -->
+                                <!-- <div class="bot-split">
+                                        <div class="bot-image">
+                                                <a href="">
+                                                        <img class="bot-real-image" src="https://cdn.discordapp.com/app-icons/708353162347675749/f21be7f5c953c11eaef915d381823d19.png?size=512"">
+                                                </a>
+                                        </div>
+                                        <div class="bot-text">
+                                                <h1>hello</h1>
+                                        </div>
+                                </div> -->
+                                <div class="bot-split">
+                                        <div class="bot-image">
+                                                <a href="">
+                                                        <img class="bot-real-image" src="https://cdn.discordapp.com/app-icons/708353162347675749/f21be7f5c953c11eaef915d381823d19.png?size=512">
+                                                </a>
+                                        </div>
+                                        <div class="bot-data">
+                                                <div class="bot-name"><label style="color: orange;">Uncle Jim</label> <span class="label label-primary">BOT</span></div>
+                                                <div class="bot-status"><label >Watching <b>over chats</b></label></div>
+                                        </div>
+                                </div>
                         </div>
                 </div>
                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
                         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
                         crossorigin="anonymous"></script>
+                <script>
+                        $(function () {
+                                $('[data-toggle="tooltip"]').tooltip()
+                        })
+
+                </script>
 </body>
 
 </html>

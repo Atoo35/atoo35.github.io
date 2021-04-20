@@ -6,6 +6,10 @@
         --background-modifier-selected: rgba(79,84,92,0.32);
         --background-secondary-alt: #292b2f;
 }
+label{
+        margin-bottom: 0;
+        font-weight: 0;
+}
 ::-webkit-scrollbar{
         display: none;
 }
@@ -60,7 +64,7 @@ html, body{
         
 }
 .topnav-section1 > div > h1{
-        min-width: 154px;
+        min-width: 160.41px;
         /* margin: 0; */
         margin-top: 10px;
         color: var(--text-normal);
@@ -88,7 +92,15 @@ html, body{
         color: var(--channels-default);
         cursor: pointer;
         margin: 0;
-        font-size: 28px;
+        font-size: 20px;
+}
+.channels > div > p {
+        padding: 5px;
+        border-radius: 5px;
+        color: var(--channels-default);
+        margin: 0;
+        font-weight: 600;
+        font-size: 12px;
 }
 .channels > div > h1:hover{
         color: var(--text-normal);
@@ -128,7 +140,7 @@ html, body{
         flex:1;
 }
 .author-text > a > h1 {
-        font-size:24px ;
+        font-size:26px ;
         color: var(--text-normal);
 }
 .center-nav{
@@ -138,4 +150,47 @@ html, body{
 .right-nav{
         flex:1;
         background-color: var(--background-secondary);
+}
+.bot-split{
+        margin-top: 5px;
+        margin-left: 5px;
+        display: flex;
+        flex-direction: row;
+        min-width: 200px;
+}
+.bot-image{
+        flex: 1;
+        max-width: 40px;
+        margin-right: 5px;
+}
+.bot-data{
+        display: flex;
+        flex:3;
+        flex-direction: column;
+        color: var(--channels-default);
+}
+.bot-name{
+        flex:1;
+        text-align: left;
+}
+.bot-status{
+        flex:1;
+}
+.bot-real-image{
+        max-width: 40px;
+        width: 100%;
+        border-radius: 50%;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+}
+.bot-text{
+        flex:1;
+}
+.bot-text > h1 {
+        font-size:22px ;
+        color: var(--text-normal);
+}
+.label-primary{
+        background-color: #7289da;
 }
