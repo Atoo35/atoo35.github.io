@@ -142,11 +142,22 @@ html, body{
         margin-right: 20px; 
 }
 .author-text{
+        display: flex;
         flex:1;
+        flex-direction: row;
+        justify-content: space-around;
 }
-.author-text > a > h1 {
+.author-text > div > a > h1 {
         font-size:26px ;
         color: var(--text-normal);
+}
+.phone{
+        flex: 1;
+        margin-top: 24px;
+}
+.mail{
+        flex: 1;
+        margin-top: 24px;
 }
 .center-nav{
         flex:4;
