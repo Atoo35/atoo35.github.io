@@ -6,6 +6,7 @@
         --background-modifier-selected: rgba(79,84,92,0.32);
         --background-secondary-alt: #292b2f;
         --owner-color:#87f542;
+        --header-primary : #fff;
 }
 label{
         margin-bottom: 0;
@@ -245,7 +246,6 @@ html, body{
         display: flex;
         flex-direction: row;
         width: 80%;
-        height: 200px;
         margin-bottom: 75px;
         font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
@@ -295,18 +295,29 @@ html, body{
         font-weight: 600;
         
 }
-.embed-content > div >p,h5{
-        margin: 0;
+.content-grid{
+        display: grid;
+        grid-template-columns: auto;
+        padding: 10px;
+        grid-row-gap: 4px;
+        color: var(--header-primary);
 }
-.title-bold{
-        margin-top: 5px;
-        padding-left: 7px;
+.grid-item{
+        text-align: left;
+}
+.title-bold-1{
+        margin: 0;
         font-size: 16px;
 }
-.content-body{
-        font-weight: 400;
+.title-bold-2{
+        margin: 0;
         margin-top: 5px;
-        padding-left:  7px;
+        font-size: 14px;
+        font-weight: 600;
+}
+.content-body-1{
+        margin: 0;
+        font-weight: 400;
         font-size: 14px;
 }
 .embed-thumbnail{
