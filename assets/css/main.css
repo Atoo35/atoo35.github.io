@@ -5,6 +5,7 @@
         --text-normal:#dcddde;
         --background-modifier-selected: rgba(79,84,92,0.32);
         --background-secondary-alt: #292b2f;
+        --owner-color:#87f542;
 }
 label{
         margin-bottom: 0;
@@ -82,11 +83,20 @@ html, body{
         flex-direction: column;
         background-color: var(--background-secondary);
 }
+.repo-breaks{
+        display: inline-flex;
+        margin-left: 5px;
+}
+.repo-breaks > i{
+        color: var(--channels-default);
+        margin-top: 4px;
+}
 .channels{
         padding-top: 20px;
         flex: 10;
         text-align: left;
-        overflow-x:scroll;
+        overflow-y:scroll;
+        max-height: 645px;
 }
 .channels > div{
         padding: 5px;
@@ -222,6 +232,85 @@ html, body{
 #jumbotron{
         background: var(--background-primary); 
         color: var(--channels-default);
+}
+.frame-container{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 700px;
+        max-height: 700px;
+        /* padding-bottom: 10px; */
+        margin-bottom: 90px;
+}
+.main-embed{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        height: 200px;
+        margin-bottom: 75px;
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.embed-user-image{
+        flex:1;
+}
+.embed-message{
+        display: flex;
+        flex-direction: row;
+        flex:9;
+}
+.embed-user-name{
+        flex:9;
+        display: flex;
+        flex-direction: column;
+}
+.embed-user{
+        flex:1;
+}
+.embed-actual-user-name{
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--owner-color)
+}
+#date{
+        margin-left: 5px;
+        font-size: 11px; 
+        font-weight: 200;
+        color:var(--channels-default)
+}
+.embed-data{
+        flex:9;
+        display: flex;
+        flex-direction: row;
+        border-radius: 6px;
+        border-left: 3.5px solid #32a61b;
+        background-color: var(--background-secondary);
+}
+.embed-real-image{
+        margin-left: 10px;
+        width: 50px;
+        border-radius: 50%;
+}
+.embed-content{
+        flex:9;
+        color: var(--text-normal);
+        font-weight: 600;
+        
+}
+.embed-content > div >p,h5{
+        margin: 0;
+}
+.title-bold{
+        margin-top: 5px;
+        padding-left: 7px;
+        font-size: 16px;
+}
+.content-body{
+        font-weight: 400;
+        margin-top: 5px;
+        padding-left:  7px;
+        font-size: 14px;
+}
+.embed-thumbnail{
+        flex: 1;
 }
 @media only screen and (max-width:768px){
         #main-container{
