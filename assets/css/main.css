@@ -12,6 +12,7 @@
         --background-modifier-accent: hsla(0,0%,100%,0.06);
         --channeltextarea-background: #40444b;
         --text-muted: #72767d;
+        --text-channel-mention:#7289da
 }
 label{
         margin-bottom: 0;
@@ -348,6 +349,15 @@ html, body{
 }
 .channel-header-text-secondary{
         color: var(--header-secondary);
+}
+.channel-mention-span{
+        padding:5px;
+        border-radius:5px;
+        cursor: pointer;
+        background: rgba(114,137,218,.1);
+}
+.channel-mention-span > a{
+        color: var(--text-channel-mention)
 }
 .channel-hash{
         border-radius: 50%;
