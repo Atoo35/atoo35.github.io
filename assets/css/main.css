@@ -180,6 +180,7 @@ html, body{
         display:flex;
         flex-direction: column;
         background-color: var(--background-primary);
+        
 }
 .right-nav{
         flex:1;
