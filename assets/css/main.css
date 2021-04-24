@@ -10,6 +10,8 @@
         --background-accent: #4f545c;
         --header-secondary: #b9bbbe;
         --background-modifier-accent: hsla(0,0%,100%,0.06);
+        --channeltextarea-background: #40444b;
+        --text-muted: #72767d;
 }
 label{
         margin-bottom: 0;
@@ -50,6 +52,7 @@ html, body{
         display: flex;
         flex-direction: row;
         height: 100%;
+        overflow: hidden;
 }
 .top-navbar{
         display: flex;
@@ -174,6 +177,8 @@ html, body{
 }
 .center-nav{
         flex:4;
+        display:flex;
+        flex-direction: column;
         background-color: var(--background-primary);
 }
 .right-nav{
@@ -238,12 +243,12 @@ html, body{
 }
 .frame-container{
         display: flex;
+        flex: 1;
         flex-direction: column;
         justify-content: flex-end;
-        height: 100%;
         /* max-height: 700px; */
         /* padding-bottom: 10px; */
-        padding-bottom: 90px;
+        /* padding-bottom: 90px; */
         font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 .main-embed{
@@ -354,6 +359,43 @@ html, body{
 }
 .channel-hash > i{
         margin-top: 3px;
+}
+.first-child-content{
+        margin-top: auto;
+}
+.input-message{
+        display: flex;
+        flex: 1;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+}
+.input-message-div{
+        width: 80%;
+        height: 40px;
+}
+.input-text-area{
+        -webkit-box-shadow: none;
+	-moz-box-shadow: none;
+        box-shadow: none;
+        border: none;
+        border-radius: 5px;
+        width: 100%;
+        height: 100%;
+        color: var(--text-normal);
+        padding: 5px;
+        background-color: var(--channeltextarea-background);
+}
+input:focus{
+        outline: none;
+}
+.chat-box{
+        flex: 9; 
+        display: flex; 
+        flex-direction: column-reverse; 
+        overflow-y: scroll;
 }
 @media only screen and (max-width:768px){
         #main-container{
