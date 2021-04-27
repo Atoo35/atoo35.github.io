@@ -14,11 +14,15 @@ function getTime(){
         return new Date().toLocaleTimeString('en-US',{ hour: '2-digit', minute: '2-digit' })
          
 }
+var owner = "Atharva Deshpande"
+var user = "John Doe"
+var ownerClass= "embed-actual-user-name"
+var userClass = "diff-color"
 async function runBot(event){
         event.preventDefault()
         // await new Promise(r => setTimeout(r, 600));
         var inputText = $('#text-message-input').val()
-        notEmbed(inputText)
+        notEmbed(inputText,"/assets/img/default.png",user,userClass)
         $('#text-message-input').val('')
         var data = await onMessage(inputText)
         if(data.isCommand){
@@ -26,24 +30,24 @@ async function runBot(event){
                        isEmbed(data.message)
                 }
                 else{
-                       notEmbed(data.message.text)
+                       notEmbed(data.message.text,"https://avatars.githubusercontent.com/u/43279227?s=400&u=1673f782587866aefc1c751deb798042e21867ab&v=4",owner,ownerClass + " " +userClass)
 
                 }
         }
 }
-function notEmbed(message){
+function notEmbed(message,image,author,className){
         $('#test').prepend(`
         <div class="main-embed">
                         <div class='embed-user-image'>
                                 <img class="embed-real-image"
-                                        src="https://avatars.githubusercontent.com/u/43279227?s=400&u=1673f782587866aefc1c751deb798042e21867ab&v=4">
+                                        src="${image}">
 
                         </div>
                         <div class='embed-message'>
                                 <div class='embed-user-name'>
                                         <div class="embed-user">
-                                                <span class='embed-actual-user-name'>
-                                                        <label>Atharva Deshpande</label>
+                                                <span class='${className}'>
+                                                        <label>${author}</label>
                                                         <label id="date">${getDate()} ${getTime()}</label>
                                                 </span>
                                         </div>

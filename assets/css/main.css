@@ -280,6 +280,9 @@ html, body{
         font-weight: 700;
         color: var(--owner-color)
 }
+.diff-color{
+        color: #bb1adb;
+}
 #date{
         margin-left: 5px;
         font-size: 11px; 
