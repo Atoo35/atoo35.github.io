@@ -22,9 +22,15 @@ function runCommand(command) {
                 switch (command) {
                         case 'help': {
                                 data.message.header='Help Menu'
-                                data.message.text = "`!help` is the only command as of now <br/> This is under development! Stay tuned...."
+                                data.message.text = "`!contact` - find out how to contact me."
                                 data.isCommand = true
                                 data.isEmbed=true
+                                resolve(data);
+                                break;
+                        }
+                        case 'contact':{
+                                data.isCommand=true;
+                                data.message.text='You can find this information at the bottom left corner near `Atoo35`'
                                 resolve(data);
                                 break;
                         }

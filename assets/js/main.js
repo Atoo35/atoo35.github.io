@@ -30,7 +30,7 @@ async function runBot(event){
                        isEmbed(data.message)
                 }
                 else{
-                       notEmbed(data.message.text,"https://avatars.githubusercontent.com/u/43279227?s=400&u=1673f782587866aefc1c751deb798042e21867ab&v=4",owner,ownerClass + " " +userClass)
+                       notEmbed(data.message.text,"https://avatars.githubusercontent.com/u/43279227?s=400&u=1673f782587866aefc1c751deb798042e21867ab&v=4",owner,ownerClass)
 
                 }
         }
