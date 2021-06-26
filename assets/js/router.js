@@ -1,7 +1,8 @@
 function getPageDetails(pageName){
         var data={
                 "welcome":false,
-                "talk-to-me":true
+                "talk-to-me":true,
+                "battleship":false
         }
         return data[pageName]
 }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+	#main{
+		position: absolute;
+		height: 40px;
+		width: 40px;
+		left:45%;
+		top:40%;
+		text-align: center;
+	}
+	.outerCircle{
+		height: 100%;
+		width: 100%;
+		border-radius: 50%;
+		background-color:green;
+		animation: ripple 2s infinite;
+	}
+	.innerCircle{
+		position: absolute;
+		height: 80%;
+		width: 80%;
+		left:10%;
+		top:10%;
+		border-radius: 50%;
+		background-color: white;
+		animation: ripple 2s infinite;
+			
+	}
+	.outerCircle.first{
+		position: absolute;
+		height: 80%;
+		width: 80%;
+		top:10%;
+		left: 10%;
+		animation-delay: 1.5s;
+		transform:scale(0.0);
+	}
+	.innerCircle.first{
+		animation-delay: 1.5s;
+	}
+	@keyframes ripple{
+		0%{
+			transform: scale(0.0);
+		}
+		25%{
+			transform: scale(0.3);
+		}
+		50%{
+			transform: scale(0.6);
+		}
+		100%{
+			transform: scale(1.0);
+		}
+	}
+</style>
+<body>
+<div id="main">
+	<div class="outerCircle">
+		<div class="innerCircle"></div>
+	</div>
+	<div class="outerCircle first">
+		<div class="innerCircle first"></div>
+	</div>
+	
+	
+
+	
+</div>
+</body>
+</html>

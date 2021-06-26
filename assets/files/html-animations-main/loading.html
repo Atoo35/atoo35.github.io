@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+#myDiv{
+	background-color: black;
+	width: 40px;
+	height: 40px;
+	left: 45%;
+	top: 30%;
+	border-radius: 50%;
+	position: absolute;
+	text-align: center;
+	animation: example 2s infinite;
+	
+
+}
+#myDiv1{
+	background-color: black;
+	width: 40px;
+	height: 40px;
+	left: 48%;
+	top: 30%;
+	border-radius: 50%;
+	position: absolute;
+	text-align: center;
+	animation: example 2s infinite;
+	animation-delay: 200ms;
+	
+
+}	
+#myDiv2{
+	background-color: black;
+	width: 40px;
+	height: 40px;
+	left: 51%;
+	top: 30%;
+	border-radius: 50%;
+	position: absolute;
+	text-align: center;
+	animation: example 2s infinite;
+	animation-delay: 400ms;
+	
+
+}
+#myDiv3{
+	background-color: black;
+	width: 40px;
+	height: 40px;
+	left: 54%;
+	top: 30%;
+	border-radius: 50%;
+	position: absolute;
+	text-align: center;
+	animation: example 2s infinite;
+	animation-delay: 600ms;
+	
+
+}
+
+@keyframes example{
+	0%{
+		background-color: black;
+		transform: translateY(0px);
+	}
+	25%{
+		background-color: blue;
+		
+	}
+	50%{
+		background-color: green;
+		transform: translateY(-80px);
+	}
+	100%{
+		background-color: yellow;
+		transform: translateX(-0px);
+	}
+}
+
+</style>
+</script>
+<body onload="generateFood()">
+
+<div id="myDiv"></div>
+<div id="myDiv1"></div>
+<div id="myDiv2"></div>
+<div id="myDiv3"></div>
+</body>
+</html>
