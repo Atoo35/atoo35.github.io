@@ -1,0 +1,78 @@
+<div class="main-embed">
+        <div class='embed-user-image'>
+                <img class="embed-real-image"
+                        src="https://avatars.githubusercontent.com/u/43279227?s=400&u=1673f782587866aefc1c751deb798042e21867ab&v=4">
+
+        </div>
+        <div class='embed-message'>
+                <div class='embed-user-name'>
+                        <div class="embed-user">
+                                <span class='embed-actual-user-name'>
+                                        <label>Atharva Deshpande</label>
+                                        <label id="date"></label>
+                                </span>
+                        </div>
+                        <div class='embed-data'>
+                                <div class="embed-content">
+                                        <div class="content-grid">
+                                                <div class="grid-item">
+                                                        <p class="title-bold-1">News app built with React Native</p>
+                                                </div>
+                                                <div class="grid-item">
+                                                        <p class="content-body-1">This is a hybrid app built with React Native. It uses data from 
+                                                                <span><a style="color:var(--text-channel-mention)" href="https://newsapi.org/" target="_blank">NewsAPI</a></span>
+                                                                which includes local news, national news, categorical news or even news by news source.
+                                                        </p>
+                                                </div>
+                                                <div class="grid-item">
+                                                        <p class="content-body-1">
+                                                                There are 3 main pages in this app. The first is the home page which gives you the national news according to your location.
+                                                                
+                                                        </p>
+                                                </div>
+                                                <div class="grid-item">
+                                                        <p class='content-body-1'>
+                                                                Second tab contains the alphabetical list of all the news sources available (This is hardcoded for the time being). Clicking on
+                                                                any of the tiles you will get a list of news sources starting with the selected alphabet.
+                                                                
+                                                        </p>
+                                                </div>
+                                                <div class="grid-item">
+                                                        <p class='content-body-1'>
+                                                                The third tab includes the search bar by which you can search for desired news and even apply some fiters.
+                                                        </p>
+                                                </div>
+                                                <div class="grid-item">
+                                                        <p class="content-body-1">
+                                                                <span><a style="color:var(--text-channel-mention)" href="https://github.com/Atoo35/NEWS-React-Native-" target="_blank">Click here</a></span> to go to GitHub repo.
+                                                        </p>
+                                                </div>
+                                                <div class="grid-item">
+                                                        <video width="200" height="340" controls muted>
+                                                                <source src="assets/videos/news-react-native.mp4" type="video/mp4">
+                                                                Your browser does not support HTML video.
+                                                        </video>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class='embed-thumbnail'></div>
+                        </div>
+                </div>
+        </div>
+</div>
+<div class="channel-header">
+        <div class="channel-hash">#
+        </div>
+        <div class="channel-header-text">Welcome to #NEWS-React-Native!</div>
+        <div class="channel-header-text-secondary">This is the start of the #NEWS-React-Native
+                channel.
+        </div>
+</div>
+
+
+<script>
+
+        $('[id=date]').each(function () {
+                $(this).text(`${getDate()} ${getTime()}`)
+        })
+</script>
