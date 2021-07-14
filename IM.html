@@ -1,0 +1,82 @@
+<div class="main-embed">
+        <div class='embed-user-image'>
+                <img class="embed-real-image"
+                        src="https://avatars.githubusercontent.com/u/43279227?s=400&u=1673f782587866aefc1c751deb798042e21867ab&v=4">
+
+        </div>
+        <div class='embed-message'>
+                <div class='embed-user-name'>
+                        <div class="embed-user">
+                                <span class='embed-actual-user-name'>
+                                        <label>Atharva Deshpande</label>
+                                        <label id="date"></label>
+                                </span>
+                        </div>
+                        <div class='embed-data'>
+                                <div class="embed-content">
+                                        <div class="content-grid">
+                                                <div class="grid-item">
+                                                        <p class="title-bold-1">IM (Instant Messenger)</p>
+                                                </div>
+                                                <div class="grid-item">
+                                                        <p class="content-body-1">Built using MERN stack I wanted to explore Fullstack development.
+                                                                The project draws inspiration from Snapchat (which basically means I was lazy enough not to store the messages in the database).
+                                                                <br/>
+                                                                Anyway it uses sockets.io to communicate with other users simultaneously.
+                                                                I have also implemented a mechanism where-in if person A texts B and person B is texting to person C, person B would see person
+                                                                A's name appearing on the left hand side menu indicating A is texting him/her.<br/>
+                                                                Notifications aren't implemented as of yet.
+                                                                <br/>
+                                                                <br/>
+                                                                NOTE:This project is still not complete so please ignore the UI.
+                                                        </p>
+                                                </div>
+                                                <br/>
+                                                <div class="grid-item">
+                                                        <p class="title-bold-1">
+                                                                How to run?
+                                                        </p>
+                                                </div>
+                                                <div class="grid-item">
+                                                        <p class="content-body-1">
+                                                                1. Navigate to frontend>src>services>api.js and change the IP address to your IP.<br/>
+                                                                2. Similarly Navigate to frontend>src>pages>Home>index.js and change the IP on line 25.<br/>
+                                                                3. In the folder backend, create a .env file and put values for MONGODB_URI and SECRET.<br/>
+                                                                4. Open 2 cmd's, one for frontend and one for backend and go into the root folder of the respective folders in cmd.<br/>
+                                                                5. In frontend cmd type 'npm run dev' and for backend type 'npm start'.
+                                                        </p>
+                                                </div>
+                                                <div class="grid-item">
+                                                        <p class="content-body-1">
+                                                                <span><a style="color:var(--text-channel-mention)"href="https://github.com/Atoo35/IM">Click here</a></span> to go to GitHub repo.
+                                                        </p>
+                                                </div>
+                                                <div class="grid-item">
+                                                        <video width="400" controls muted>
+                                                                <source src="assets/videos/IM.mp4" type="video/mp4">
+                                                                Your browser does not support HTML video.
+                                                        </video>
+                                                </div> 
+                                        </div>
+                                </div>
+                                <div class='embed-thumbnail'></div>
+                        </div>
+                </div>
+        </div>
+</div>
+<div class="channel-header">
+        <div class="channel-hash">#
+        </div>
+        <div class="channel-header-text">Welcome to #IM!</div>
+        <div class="channel-header-text-secondary">This is the start of the #IM
+                channel.
+        </div>
+</div>
+
+
+<script>
+
+        $('[id=date]').each(function () {
+                $(this).text(`${getDate()} ${getTime()}`)
+        })
+</script>
