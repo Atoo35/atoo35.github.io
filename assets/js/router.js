@@ -7,7 +7,7 @@ function getPageDetails(pageName){
         return data[pageName]
 }
 function changeRoute(routeName){
-        $('#test').load(`${routeName}.html`,function(response){
+        $('#test').load(`pages/${routeName}.html`,function(response){
         })
         $('.channels').children('div').each(function(){
                 // console.log($(this).first().attr("id"));
