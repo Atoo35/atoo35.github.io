@@ -179,6 +179,10 @@ html, body{
         flex: 1;
         margin-top: 24px;
 }
+.twitter{
+        flex: 1;
+        margin-top: 24px;
+}
 .center-nav{
         flex:4;
         display:flex;
